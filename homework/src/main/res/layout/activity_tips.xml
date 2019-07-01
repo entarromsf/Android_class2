@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="54dp"
+            android:text="A" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_toEndOf="@+id/btn_1"
+            android:layout_toRightOf="@+id/btn_1"
+            android:text="B" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_toEndOf="@+id/btn_2"
+            android:layout_toRightOf="@+id/btn_2"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:layout_toEndOf="@+id/btn_3"
+            android:layout_toRightOf="@+id/btn_3"
+            android:text="D" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/im_list_item"
+        />
+</LinearLayout>
